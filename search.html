@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Autocomplete Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/css/icomoon.css"> 
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+  <style>
+    .autocomplete-items {
+      position: absolute;
+      border: 1px solid #d4d4d4;
+      border-bottom: none;
+      border-top: none;
+      z-index: 99;
+      top: 100%;
+      left: 0;
+      right: 0;
+    }
+
+    .autocomplete-item {
+      padding: 10px;
+      cursor: pointer;
+      background-color: #fff;
+      border-bottom: 1px solid #d4d4d4;
+    }
+
+    .autocomplete-item:hover {
+      background-color: #e9e9e9;
+    }
+
+    .autocomplete-active {
+      background-color: #d4d4d4 !important;
+    }
+
+    .no-match {
+      padding: 10px;
+      background-color: #ffdddd;
+      border: 1px solid #d4d4d4;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg ftco_navbar " id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Travellers<span>Escape</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="rooms.html" class="nav-link">Our Rooms</a></li>
+          <li class="nav-item"><a href="restaurant.html" class="nav-link">Restaurant</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="ftco-section">
+    <div class="container mt-5">
+      <div class="form-group position-relative">
+        <label for="searchInput">Where are you going?</label>
+        <div class="d-flex position-relative">
+        <input type="text" class="form-control" id="searchInput" placeholder="Search location" autofocus>
+        <button class="btn btn-primary" id="searchButton" style="margin-left: -1px;">
+          <span class="icon icon-search"></span>
+        </button>
+        <div id="autocompleteList" class="autocomplete-items"></div>
+        </div>
+      </div>
+      </div>
+  </section>
+
+  
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const destinations = ["Bangalore", "Bisle Ghat", "Beach Stays", "Mysore", "Kodagu", "Chikamagaluru","Hassan"];
+      
+      const searchInput = document.getElementById("searchInput"); 
+      const autocompleteList = document.getElementById("autocompleteList");
+
+      searchInput.addEventListener("input", function() {
+        const searchTerm = this.value.toLowerCase();
+        autocompleteList.innerHTML = '';
+        
+        if (!searchTerm) {
+          return false;
+        }
+
+        let matches = destinations.filter(destination => destination.toLowerCase().includes(searchTerm));
+
+        if (matches.length === 0) {
+          let noMatchDiv = document.createElement("div");
+          noMatchDiv.classList.add("no-match");
+          noMatchDiv.textContent = "No match found";
+          autocompleteList.appendChild(noMatchDiv);
+        } else {
+          matches.forEach(match => {
+            let matchDiv = document.createElement("div");
+            matchDiv.classList.add("autocomplete-item");
+            matchDiv.textContent = match;
+            matchDiv.addEventListener("click", function() {
+              searchInput.value = match;
+              autocompleteList.innerHTML = '';
+            });
+            autocompleteList.appendChild(matchDiv);
+          });
+        }
+      });
+
+      document.addEventListener("click", function(e) {
+        if (e.target !== searchInput) {
+          autocompleteList.innerHTML = '';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
