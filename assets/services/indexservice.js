@@ -1,6 +1,6 @@
-const localhosturl="http://127.0.0.1:5500";
-const githuburl="https://roh-arjun.github.io";
-const productionurl="https://555ventures.in";
+// const localhosturl="http://127.0.0.1:5500";
+// const githuburl="https://roh-arjun.github.io";
+// const productionurl="https://555ventures.in";
 
 async function fetchProperties() {
     try {
@@ -29,10 +29,10 @@ function allrooms(roomslist){
                                 <a><img class="img-fluid" src="${room.img1}" alt=""></a>
                             </div>
                             <div class="p-4 pb-0">
-                                <h5 class="text-primary mb-2">₹ ${room.price}</h5>
+                                <h5 class="text-primary mb-2">₹ ${room.price}<span> per night</span></h5>
                                 <div style="text-align: center;">
                                 <p class="d-block h5 mb-2"  data-bs-toggle="modal" data-bs-target="#exampleModal">${room.display}</p>
-                                 <a href="rooms-single.html" class="btn btn-primary">Details</a>
+                                 <a  onclick="redirectroom(${room.id})" class="btn btn-primary">Details</a>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ function couplerooms(roomslist){
                                 <h5 class="text-primary mb-2">₹ ${room.price}</h5>
                                 <div style="text-align: center;">
                                 <p class="d-block h5 mb-2"  data-bs-toggle="modal" data-bs-target="#exampleModal">${room.display}</p>
-                                 <a href="rooms-single.html" class="btn btn-primary">Details</a>
+                                 <a onclick="redirectroom(${room.id})" class="btn btn-primary">Details</a>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@ function familyrooms(roomslist){
                                 <h5 class="text-primary mb-2">₹ ${room.price}</h5>
                                 <div style="text-align: center;">
                                 <p class="d-block h5 mb-2"  data-bs-toggle="modal" data-bs-target="#exampleModal">${room.display}</p>
-                                 <a href="rooms-single.html" class="btn btn-primary">Details</a>
+                                 <a onclick="redirectroom(${room.id})" class="btn btn-primary">Details</a>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +114,7 @@ function grouprooms(roomslist){
                                 <h5 class="text-primary mb-2">₹ ${room.price}</h5>
                                 <div style="text-align: center;">
                                 <p class="d-block h5 mb-2"  data-bs-toggle="modal" data-bs-target="#exampleModal">${room.display}</p>
-                                 <a href="rooms-single.html" class="btn btn-primary">Details</a>
+                                 <a onclick="redirectroom(${room.id})" class="btn btn-primary">Details</a>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +141,7 @@ function singleroom(roomslist){
                                 <h5 class="text-primary mb-2">₹ ${room.price}</h5>
                                 <div style="text-align: center;">
                                 <p class="d-block h5 mb-2"  data-bs-toggle="modal" data-bs-target="#exampleModal">${room.display}</p>
-                                 <a href="rooms-single.html" class="btn btn-primary">Details</a>
+                                 <a onclick="redirectroom(${room.id})" class="btn btn-primary">Details</a>
                                 </div>
                             </div>
                         </div>
@@ -152,6 +152,8 @@ function singleroom(roomslist){
     });
 }
 
-
+function redirectroom(id){
+    location.href=`rooms-single.html?id=${encodeURIComponent(id)}`
+}
 
 fetchProperties();

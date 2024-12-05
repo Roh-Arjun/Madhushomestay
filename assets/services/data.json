@@ -2,57 +2,105 @@
     "id":1,
     "type":"Couple",
     "img1":"assets/images/bedroom2.jpg",
+    "img2":"assets/images/bedroom2.jpg",
+    "img3":"assets/images/bedroom2.jpg",
     "typesub":"Couplewithfood",
     "display":"Couple Room with Food",
-    "price":"3500.00"
+    "price":"3500.00",
+    "food":"Unlimited BreakFast & Dinner(Veg & NON)",
+    "firecamp":"Free",
+    "music":"Free",
+    "games":"Free"
 },{
     "id":2,
     "type":"Couple",
     "typesub":"Couplewithoutfood",
-    "img1":"assets/images/bedroom3.jpg",
+    "img1":"assets/images/bedroom2.jpg",
+    "img2":"assets/images/bedroom2.jpg",
+    "img3":"assets/images/bedroom2.jpg",
     "display":"Couple Room without Food",
-    "price":"2750.00"
+    "price":"2750.00",
+    "food":"Unlimited BreakFast only(Veg & NON)",
+    "firecamp":"Paid",
+    "music":"Paid",
+    "games":"Free"
 },{
     "id":3,
     "type":"Family",
     "typesub":"familywithfood",
     "img1":"assets/images/bedroom2.jpg",
+    "img2":"assets/images/bedroom2.jpg",
+    "img3":"assets/images/bedroom2.jpg",
     "display":"Family Room with Food",
-    "price":"1500.00"
+    "price":"1500.00",
+    "food":"Unlimited BreakFast & Dinner(Veg & NON)",
+    "firecamp":"Free",
+    "music":"Free",
+    "games":"Free"
 },{
     "id":4,
     "type":"Family",
     "typesub":"Familywithoutfood",
-    "img1":"assets/images/bedroom6.jpg",
+    "img1":"assets/images/bedroom2.jpg",
+    "img2":"assets/images/bedroom2.jpg",
+    "img3":"assets/images/bedroom2.jpg",
     "display":"Family Room without Food",
-    "price":"999.00"
+    "price":"999.00",
+    "food":"Unlimited BreakFast only(Veg & NON)",
+    "firecamp":"Paid",
+    "music":"Paid",
+    "games":"Free"
 },{
     "id":5,
     "type":"Group",
     "typesub":"Groupwithfood",
-    "img1":"assets/images/bedroom5.jpg",
+    "img1":"assets/images/bedroom1.jpg",
+    "img2":"assets/images/bedroom2.jpg",
+    "img3":"assets/images/bedroom3.jpg",
     "display":"Group Room with Food",
-    "price":"2250.00"
+    "price":"2250.00",
+    "food":"Unlimited BreakFast & Dinner(Veg & NON)",
+    "firecamp":"Free",
+    "music":"Free",
+    "games":"Free"
 },{
     "id":6,
     "type":"Group",
     "typesub":"Groupwithoutfood",
-    "img1":"assets/images/bedroom6.jpg",
+    "img1":"assets/images/bedroom2.jpg",
+    "img2":"assets/images/bedroom2.jpg",
+    "img3":"assets/images/bedroom2.jpg",
     "display":"Group Room without Food",
-    "price":"1800.00"
+    "price":"1800.00",
+    "food":"Unlimited BreakFast only(Veg & NON)",
+    "firecamp":"Paid",
+    "music":"Paid",
+    "games":"Free"
 },{
     "id":7,
     "type":"Single",
     "typesub":"Singlewithfood",
-    "img1":"assets/images/bedroom7.jpg",
+    "img1":"assets/images/bedroom2.jpg",
+    "img2":"assets/images/bedroom2.jpg",
+    "img3":"assets/images/bedroom2.jpg",
     "display":"Single Room with Food",
-    "price":"2250.00"
+    "price":"2250.00",
+    "food":"Unlimited BreakFast & Dinner(Veg & NON)",
+    "firecamp":"Free",
+    "music":"Free",
+    "games":"Free"
 },{
     "id":8,
     "type":"Single",
     "typesub":"Singlewithoutfood",
-    "img1":"assets/images/bedroom8.jpg",
+    "img1":"assets/images/bedroom2.jpg",
+    "img2":"assets/images/bedroom2.jpg",
+    "img3":"assets/images/bedroom2.jpg",
     "display":"Single Room without Food",
-    "price":"1800.00"
+    "price":"1800.00",
+    "food":"Unlimited BreakFast only(Veg & NON)",
+    "firecamp":"Paid",
+    "music":"Paid",
+    "games":"Free"
 }
 ]
