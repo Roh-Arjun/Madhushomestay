@@ -1,0 +1,58 @@
+[{
+    "id":1,
+    "type":"Couple",
+    "img1":"assets/images/bedroom2.jpg",
+    "typesub":"Couplewithfood",
+    "display":"Couple Room with Food",
+    "price":"3500.00"
+},{
+    "id":2,
+    "type":"Couple",
+    "typesub":"Couplewithoutfood",
+    "img1":"assets/images/bedroom3.jpg",
+    "display":"Couple Room without Food",
+    "price":"2750.00"
+},{
+    "id":3,
+    "type":"Family",
+    "typesub":"familywithfood",
+    "img1":"assets/images/bedroom2.jpg",
+    "display":"Family Room with Food",
+    "price":"1500.00"
+},{
+    "id":4,
+    "type":"Family",
+    "typesub":"Familywithoutfood",
+    "img1":"assets/images/bedroom6.jpg",
+    "display":"Family Room without Food",
+    "price":"999.00"
+},{
+    "id":5,
+    "type":"Group",
+    "typesub":"Groupwithfood",
+    "img1":"assets/images/bedroom5.jpg",
+    "display":"Group Room with Food",
+    "price":"2250.00"
+},{
+    "id":6,
+    "type":"Group",
+    "typesub":"Groupwithoutfood",
+    "img1":"assets/images/bedroom6.jpg",
+    "display":"Group Room without Food",
+    "price":"1800.00"
+},{
+    "id":7,
+    "type":"Single",
+    "typesub":"Singlewithfood",
+    "img1":"assets/images/bedroom7.jpg",
+    "display":"Single Room with Food",
+    "price":"2250.00"
+},{
+    "id":8,
+    "type":"Single",
+    "typesub":"Singlewithoutfood",
+    "img1":"assets/images/bedroom8.jpg",
+    "display":"Single Room without Food",
+    "price":"1800.00"
+}
+]
