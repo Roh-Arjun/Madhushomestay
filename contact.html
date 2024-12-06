@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Harborlights - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Madhu's HomeStay Contact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="assets/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon-32x32.png">
     
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
@@ -25,12 +26,40 @@
     <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/icomoon.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+#map {
+  position: relative;
+  width: 100%; /* Ensures the div takes up the full width */
+  height: 100%; /* Optional: you can set a specific height if needed */
+  overflow: hidden; /* Ensures no overflow outside the container */
+}
+
+#map img {
+  width: 100%; /* Makes the image responsive, filling the container */
+  height: auto; /* Maintains the aspect ratio */
+  object-fit: cover; /* Ensures the image covers the div fully without stretching */
+}
+
+      .map-container {
+  max-width: 100%; /* Ensures it adapts to different screen sizes */
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+
+.map-container img {
+  width: 100%;
+  height: auto; /* Maintains the aspect ratio */
+  max-width: 541px; /* Optional: Keeps the original dimension as the max size */
+  max-height: 273px; /* Optional: Keeps the original height limit */
+}
+    </style>
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Harbor<span>lights</span></a>
+	      <a class="navbar-brand" href="index.html">Madhu's <span>HomeStay</span></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -38,28 +67,18 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="rooms.html" class="nav-link">Our Rooms</a></li>
-	          <li class="nav-item"><a href="restaurant.html" class="nav-link">Restaurant</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <!-- <li class="nav-item"><a href="rooms.html" class="nav-link">Our Rooms</a></li> -->
+	          <!-- <li class="nav-item"><a href="restaurant.html" class="nav-link">Restaurant</a></li> -->
+	          <!-- <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li> -->
+	          <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
 	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
-		<div class="hero-wrap" style="background-image: url('images/bg_3.jpg');">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text d-flex align-itemd-center justify-content-center">
-          <div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
-          	<div class="text">
-	            <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home</a></span> <span>Contact Us</span></p>
-	            <h1 class="mb-4 bread">Contact Us</h1>
-            </div>
-          </div>
-        </div>
-      </div>
+		<div class="map-container">
+      <img src="assets/images/home2.jpg">
     </div>
 
     <section class="ftco-section contact-section bg-light">
@@ -71,12 +90,12 @@
           <div class="w-100"></div>
           <div class="col-md-3 d-flex">
           	<div class="info rounded bg-white p-4">
-	            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+	            <p><span>Address:</span> Madhu's Home Stay,near Alathced Estate, Ammathi, Karnataka 571211</p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
           	<div class="info rounded bg-white p-4">
-	            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+	            <p><span>Phone:</span> <a href="tel:+919916896464">+91 9916896464"</a></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
@@ -86,10 +105,11 @@
           </div>
           <div class="col-md-3 d-flex">
           	<div class="info rounded bg-white p-4">
-	            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+	            <p><span>Website</span> <a href="#">www.madhushomestay.in</a></p>
 	          </div>
           </div>
         </div>
+       
         <div class="row block-9">
           <div class="col-md-6 order-md-last d-flex">
             <form action="#" class="bg-white p-5 contact-form">
@@ -113,21 +133,23 @@
           </div>
 
           <div class="col-md-6 d-flex">
-          	<div id="map" class="bg-white"></div>
+          	<div id="map" class="bg-white">
+              <img src="assets/images/home3.jpg">
+            </div>
           </div>
         </div>
       </div>
     </section>
 
 
-    <footer class="ftco-footer ftco-section img" style="background-image: url(images/bg_4.jpg);">
+    <footer class="ftco-footer ftco-section img" >
     	<div class="overlay"></div>
       <div class="container">
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Harbor Lights</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h2 class="ftco-heading-2">Madhu's HomeStay</h2>
+              <p>Make your travel unforgettable by staying at our homestay.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -135,7 +157,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md">
+          <!-- <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Useful Links</h2>
               <ul class="list-unstyled">
@@ -145,8 +167,8 @@
                 <li><a href="#" class="py-2 d-block">Gift Card</a></li>
               </ul>
             </div>
-          </div>
-          <div class="col-md">
+          </div> -->
+          <!-- <div class="col-md">
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Privacy</h2>
               <ul class="list-unstyled">
@@ -156,26 +178,18 @@
                 <li><a href="#" class="py-2 d-block">Services</a></li>
               </ul>
             </div>
-          </div>
+          </div> -->
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="https://maps.app.goo.gl/zhdsDC1wByfdfzG87" target="_blank"><span class="icon icon-map-marker"></span><span class="text">Madhu’s Home Stay, near Alathced Estate, Ammathi, Karnataka 571211</span></a></li>
+	                <li><a href="tel:+919916896464"><span class="icon icon-phone"></span><span class="text">+91 9916896464</span></a></li>
 	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
       </div>
