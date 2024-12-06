@@ -27,6 +27,7 @@ function getQueryParams() {
 document.addEventListener("DOMContentLoaded", () => {
     const params = getQueryParams();
         console.log(params.id)   
+        sessionStorage.setItem('roomid', params.id);
         fetchProperties(params.id)    
 });
 
@@ -69,4 +70,33 @@ function roompopulate(roomslist,id){
     
 }
 
+function sharefunc(event){
+	event.preventDefault();
+    const roomid = sessionStorage.getItem('roomid');
+
+	 // Check for Web Share api support
+	 if (navigator.share) {
+    // Browser supports native share api
+    navigator.share({
+      text: 'Please check out',
+      url: 'https://roh-arjun.github.io/Madhushomestay/rooms-single.html?id='+roomid
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+      .catch((err) => console.error(err));
+  } else {
+    // Fallback
+    alert("The current browser does not support the share function. Please, manually share the link")
+  }
+}
+
+
+function whatsappmessage(){
+    const roomid = sessionStorage.getItem('roomid');
+    const path='https://roh-arjun.github.io/Madhushomestay/rooms-single.html?id='+roomid;
+    
+   // const url=window.location.protocol+"//"+window.location.host+`/shareproperty.html?id=${encodeURIComponent(id)}`
+    const text="https://wa.me/+919916896464?text=I'm%20interested%20in%20your%20homestay%20"+path
+    location.href=text;
+}
 
