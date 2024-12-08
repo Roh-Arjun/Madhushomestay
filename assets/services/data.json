@@ -6,12 +6,12 @@
     "img3":"assets/images/IMG-20241114-WA0022.jpg",
     "typesub":"Couplewithfood",
     "display":"Couple Room with Food",
-    "price":"3500.00",
+    "price":"3500.00 per Night",
     "food":"Unlimited BreakFast & Dinner(Veg & NON)",
     "firecamp":"Free",
     "music":"Free",
     "games":"Free",
-    "Hot Water":"24/7"
+    "Hot Water":"24X7"
 },{
     "id":2,
     "type":"Couple",
@@ -20,12 +20,12 @@
     "img2":"assets/images/bedroom9.jpg",
     "img3":"assets/images/IMG-20241114-WA0022.jpg",
     "display":"Couple Room without Food",
-    "price":"2750.00",
+    "price":"2750.00 per Night",
     "food":"BreakFast only(Veg)",
     "firecamp":"Paid",
     "music":"Paid",
     "games":"Free",
-    "Hot Water":"24/7"
+    "Hot Water":"24X7"
 },{
     "id":3,
     "type":"Family",
@@ -34,12 +34,12 @@
     "img2":"assets/images/bedroom4.jpg",
     "img3":"assets/images/bathroom.jpeg",
     "display":"Family Room with Food",
-    "price":"1500.00",
+    "price":"1500.00 per Night/Head",
     "food":"Unlimited BreakFast & Dinner(Veg & NON)",
     "firecamp":"Free",
     "music":"Free",
     "games":"Free",
-    "Hot Water":"24/7"
+    "Hot Water":"24X7"
 },{
     "id":4,
     "type":"Family",
@@ -48,12 +48,12 @@
     "img2":"assets/images/bedroom4.jpg",
     "img3":"assets/images/bathroom.jpeg",
     "display":"Family Room without Food",
-    "price":"999.00",
+    "price":"999.00 per Night/Head",
     "food":"BreakFast only(Veg)",
     "firecamp":"Paid",
     "music":"Paid",
     "games":"Free",
-    "Hot Water":"24/7"
+    "Hot Water":"24X7"
 },{
     "id":5,
     "type":"Group",
@@ -62,12 +62,12 @@
     "img2":"assets/images/bedroom5.jpg",
     "img3":"assets/images/bathroom.jpeg",
     "display":"Group Room with Food",
-    "price":"2250.00",
+    "price":"2250.00 per Night/Head",
     "food":"Unlimited BreakFast & Dinner(Veg & NON)",
     "firecamp":"Free",
     "music":"Free",
     "games":"Free",
-    "Hot Water":"24/7"
+    "Hot Water":"24X7"
 },{
     "id":6,
     "type":"Group",
@@ -76,12 +76,12 @@
     "img2":"assets/images/bedroom5.jpg",
     "img3":"assets/images/bedroom2.jpg",
     "display":"Group Room without Food",
-    "price":"1800.00",
+    "price":"1800.00 per Night/Head",
     "food":"BreakFast only(Veg)",
     "firecamp":"Paid",
     "music":"Paid",
     "games":"Free",
-    "Hot Water":"24/7"
+    "Hot Water":"24X7"
 },{
     "id":7,
     "type":"Single",
@@ -90,12 +90,12 @@
     "img2":"assets/images/bedroom8.jpg",
     "img3":"assets/images/bathroom.jpeg",
     "display":"Single Room with Food",
-    "price":"2250.00",
+    "price":"2250.00 per Night",
     "food":"Unlimited BreakFast & Dinner(Veg & NON)",
     "firecamp":"Free",
     "music":"Free",
     "games":"Free",
-    "Hot Water":"24/7"
+    "Hot Water":"24X7"
 },{
     "id":8,
     "type":"Single",
@@ -104,11 +104,11 @@
     "img2":"assets/images/bedroom8.jpg",
     "img3":"assets/images/bathroom.jpeg",
     "display":"Single Room without Food",
-    "price":"1800.00",
+    "price":"1800.00 per Night",
     "food":"BreakFast only(Veg)",
     "firecamp":"Paid",
     "music":"Paid",
     "games":"Free",
-    "Hot Water":"24/7"
+    "Hot Water":"24X7"
 }
 ]

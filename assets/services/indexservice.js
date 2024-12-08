@@ -29,7 +29,7 @@ function allrooms(roomslist){
                                 <a><img class="img-fluid" src="${room.img1}" alt=""></a>
                             </div>
                             <div class="p-4 pb-0">
-                                <h5 class="text-primary mb-2">₹ ${room.price}<span> per night</span></h5>
+                                <h5 class="text-primary mb-2">₹ ${room.price}</h5>
                                 <div style="text-align: center;">
                                 <p class="d-block h5 mb-2"  data-bs-toggle="modal" data-bs-target="#exampleModal">${room.display}</p>
                                  <a  onclick="redirectroom(${room.id})" class="btn btn-primary">Details</a>
