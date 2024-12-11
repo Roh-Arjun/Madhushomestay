@@ -79,7 +79,7 @@ function sharefunc(event){
     // Browser supports native share api
     navigator.share({
       text: 'Please check out',
-      url: 'https://roh-arjun.github.io/Madhushomestay/rooms-single.html?id='+roomid
+      url: 'https://madhushomestay.in/rooms-single.html?id='+roomid
     }).then(() => {
       console.log('Thanks for sharing!');
     })
@@ -93,7 +93,7 @@ function sharefunc(event){
 
 function whatsappmessage(){
     const roomid = sessionStorage.getItem('roomid');
-    const path='https://roh-arjun.github.io/Madhushomestay/rooms-single.html?id='+roomid;
+    const path='https://madhushomestay.in/rooms-single.html?id='+roomid;
     
    // const url=window.location.protocol+"//"+window.location.host+`/shareproperty.html?id=${encodeURIComponent(id)}`
     const text="https://wa.me/+919916896464?text=I'm%20interested%20in%20your%20homestay%20"+path
