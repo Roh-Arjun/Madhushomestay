@@ -4,7 +4,8 @@
 
 async function fetchProperties(id) {
     try {
-        const response = await fetch('assets/services/data.json');
+        const url = 'assets/services/data.json?' + new Date().getTime(); // Append current time
+        const response = await fetch(url);
         const roomslist = await response.json();
         console.log(roomslist)   
         roompopulate(roomslist,id)         
