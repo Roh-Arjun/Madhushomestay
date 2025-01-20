@@ -2,18 +2,40 @@
 // const githuburl="https://roh-arjun.github.io";
 // const productionurl="https://555ventures.in";
 
+// async function fetchProperties() {
+//     try {
+//         const url = 'assets/services/data.json?' + new Date().getTime(); // Append current time
+//         const response = await fetch(url);
+//         const roomslist = await response.json();
+//         console.log(roomslist)
+//         allrooms(roomslist)
+//         couplerooms(roomslist)
+//         familyrooms(roomslist)
+//         grouprooms(roomslist)
+//         singleroom(roomslist)
+        
+//     } catch (error) {
+//         console.error('Error fetching properties:', error);
+//     }
+// }
 async function fetchProperties() {
     try {
-        const url = 'assets/services/data.json?' + new Date().getTime(); // Append current time
-        const response = await fetch(url);
+        const url = 'assets/services/data.json?' + new Date().getTime(); // Add timestamp
+        const response = await fetch(url, {
+            method: 'GET',
+            headers: {
+                'Cache-Control': 'no-cache',  // Ensure the request is not cached
+                'Pragma': 'no-cache',         // Add additional cache control headers
+                'Expires': '0',               // Expire the cache immediately
+            }
+        });
         const roomslist = await response.json();
-        console.log(roomslist)
-        allrooms(roomslist)
-        couplerooms(roomslist)
-        familyrooms(roomslist)
-        grouprooms(roomslist)
-        singleroom(roomslist)
-        
+        console.log(roomslist);
+        allrooms(roomslist);
+        couplerooms(roomslist);
+        familyrooms(roomslist);
+        grouprooms(roomslist);
+        singleroom(roomslist);
     } catch (error) {
         console.error('Error fetching properties:', error);
     }

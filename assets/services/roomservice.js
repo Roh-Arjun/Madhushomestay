@@ -5,7 +5,14 @@
 async function fetchProperties(id) {
     try {
         const url = 'assets/services/data.json?' + new Date().getTime(); // Append current time
-        const response = await fetch(url);
+        const response = await fetch(url, {
+            method: 'GET',
+            headers: {
+                'Cache-Control': 'no-cache',  // Ensure the request is not cached
+                'Pragma': 'no-cache',         // Add additional cache control headers
+                'Expires': '0',               // Expire the cache immediately
+            }
+        });
         const roomslist = await response.json();
         console.log(roomslist)   
         roompopulate(roomslist,id)         
