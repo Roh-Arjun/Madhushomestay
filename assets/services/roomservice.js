@@ -1,23 +1,21 @@
-
-
-async function fetchProperties(id) {
-    try {
-        const url = 'assets/services/data.json?' + new Date().getTime(); // Append current time
-        const response = await fetch(url, {
-            method: 'GET',
-            headers: {
-                'Cache-Control': 'no-cache',  // Ensure the request is not cached
-                'Pragma': 'no-cache',         // Add additional cache control headers
-                'Expires': '0',               // Expire the cache immediately
-            }
-        });
-        const roomslist = await response.json();
-        console.log(roomslist)   
-        //roompopulate(roomslist,id)         
-    } catch (error) {
-        console.error('Error fetching properties:', error);
-    }
-}
+// async function fetchProperties(id) {
+//     try {
+//         const url = 'assets/services/data.json?' + new Date().getTime(); // Append current time
+//         const response = await fetch(url, {
+//             method: 'GET',
+//             headers: {
+//                 'Cache-Control': 'no-cache',  // Ensure the request is not cached
+//                 'Pragma': 'no-cache',         // Add additional cache control headers
+//                 'Expires': '0',               // Expire the cache immediately
+//             }
+//         });
+//         const roomslist = await response.json();
+//         console.log(roomslist)   
+//         //roompopulate(roomslist,id)         
+//     } catch (error) {
+//         console.error('Error fetching properties:', error);
+//     }
+// }
 
 function getQueryParams() {
     const params = {};
@@ -85,7 +83,7 @@ function sharefunc(event){
     // Browser supports native share api
     navigator.share({
       text: 'Please check out',
-      url: 'https://madhushomestay.in/rooms-single?id='+roomid
+      url: 'https://madhushomestay.in/room?id='+roomid
     }).then(() => {
       console.log('Thanks for sharing!');
     })
@@ -99,7 +97,7 @@ function sharefunc(event){
 
 function whatsappmessage(){
     const roomid = sessionStorage.getItem('roomid');
-    const path='https://madhushomestay.in/rooms-single?id='+roomid;
+    const path='https://madhushomestay.in/room?id='+roomid;
     
    // const url=window.location.protocol+"//"+window.location.host+`/shareproperty.html?id=${encodeURIComponent(id)}`
     const text="https://wa.me/+919916896464?text=I'm%20interested%20in%20your%20homestay%20"+path

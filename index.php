@@ -9,8 +9,6 @@
     }
     $website = mysqli_fetch_assoc($result);
 
-
-
     $type="";
     $getroomstmt = $con->prepare("CALL getRooms(?)");
     $getroomstmt->bind_param("s", $type);
@@ -51,6 +49,7 @@
   <head>
     <title><?= $website['name']?></title>
     <meta charset="utf-8">
+    <meta name="description" content="Madhus home stay, coorg">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700&display=swap" rel="stylesheet">
@@ -458,7 +457,7 @@
                                 <h5 class="text-primary mb-2">₹ <?= $row['price']?> <?php echo $label = ($row['type'] === 'Family' || $row['type']=== 'Group') ? 'per Night/Head' : 'per Night';?></h5>
                                 <div style="text-align: center;">
                                 <p class="d-block h5 mb-2"  data-bs-toggle="modal" data-bs-target="#exampleModal"><?=$row['display']?></p>
-                                 <a  onclick="redirectroom(<?=$row['id']?>)" class="btn btn-primary">Details</a>
+                                 <a onclick="redirectroom(<?=$row['id']?>)" class="btn btn-primary">Details</a>
                                 </div>
                             </div>
                         </div>
@@ -730,7 +729,7 @@
   <!-- <script src="assets/services/indexservice.js"></script> -->
 <script>
   function redirectroom(id){
-    location.href=`rooms-single?id=${encodeURIComponent(id)}`
+    location.href=`room?id=${encodeURIComponent(id)}`
 }
 </script>
   <script>

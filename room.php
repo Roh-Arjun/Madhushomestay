@@ -10,12 +10,6 @@
     }
     $website = mysqli_fetch_assoc($result);
 
-    // $getroomstmt = $con->prepare("CALL getRoomID(?)");
-    // $getroomstmt->bind_param("i", $id);
-    // $getroomstmt->execute();
-    // $getroomsresult = $getroomstmt->get_result();
-    // $getroomstmt->close();
-
     // Call stored procedure
     $stmt = $con->prepare("CALL getRoomID(?)");
     $stmt->bind_param("i", $id );
