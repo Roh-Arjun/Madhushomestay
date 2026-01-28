@@ -68,8 +68,8 @@
 	    <div class="col-12 col-md-7 col-lg-6 auth-main-col text-center p-5">
 		    <div class="d-flex flex-column align-content-end">
 			    <div class="app-auth-body mx-auto">	
-				    <div class="app-auth-branding mb-4"><a class="app-logo" href="index"><img class="logo-icon me-2" src="assets/images/app-logo.svg" alt="logo"></a></div>
-					<h2 class="auth-heading text-center mb-5">Log in to Portal</h2>
+				    <!-- <div class="app-auth-branding mb-4"><a class="app-logo" href="index"><img class="logo-icon me-2" src="assets/images/app-logo.svg" alt="logo"></a></div> -->
+					<h2 class="auth-heading text-center mb-5">Admin Log in to Madhu's Home Stay</h2>
 					<?php if(!empty($error)){ ?>				
 					<div><p class="text-danger"><?=$error?></p></div>
 					<?php }?>
@@ -93,7 +93,7 @@
 									</div><!--//col-6-->
 									<div class="col-6">
 										<div class="forgot-password text-end">
-											<a href="reset-password.html">Forgot password?</a>
+											<!-- <a href="reset-password.html">Forgot password?</a> -->
 										</div>
 									</div><!--//col-6-->
 								</div><!--//extra-->
@@ -103,7 +103,7 @@
 							</div>
 						</form>
 						
-						<div class="auth-option text-center pt-5">No Account? Sign up <a class="text-link" href="signup">here</a>.</div>
+						<!-- <div class="auth-option text-center pt-5">No Account? Sign up <a class="text-link" href="signup">here</a>.</div> -->
 					</div><!--//auth-form-container-->	
 
 			    </div><!--//auth-body-->
@@ -117,10 +117,10 @@
 		    <div class="auth-background-overlay p-3 p-lg-5">
 			    <div class="d-flex flex-column align-content-end h-100">
 				    <div class="h-100"></div>
-				    <div class="overlay-content p-3 p-lg-4 rounded">
+				    <!-- <div class="overlay-content p-3 p-lg-4 rounded">
 					    <h5 class="mb-3 overlay-title">Explore Portal Admin Template</h5>
 					    <div>Portal is a free Bootstrap 5 admin dashboard template. You can download and view the template license <a href="https://themes.3rdwavemedia.com/bootstrap-templates/admin-dashboard/portal-free-bootstrap-admin-dashboard-template-for-developers/">here</a>.</div>
-				    </div>
+				    </div> -->
 				</div>
 		    </div><!--//auth-background-overlay-->
 	    </div><!--//auth-background-col-->
